@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+.Rhistory
+.travis.yml
+.git
+appveyor.yml
+inst/lib
+LICENSE
+scripts
+inst/examples/.*\.o

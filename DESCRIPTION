@@ -1,0 +1,33 @@
+Package: RCBLAS
+Type: Package
+Title: 'RCBLAS' Integration for 'CBLAS'
+Version: 0.1.0
+Date: 2017-12-15
+Author: Ching-Chuan Chen
+Authors@R: c(person("ChingChuan", "Chen", , "zw12356@gmail.com", "aut"))
+Copyright: See the file COPYRIGHTS for various LAPACKE and CBLAS copyright details
+Maintainer: Ching-Chuan Chen <zw12356@gmail.com>
+URL: https://github.com/Chingchuan-chen/RCBLAS,
+     http://www.netlib.org/blas/#_cblas
+BugReports: https://github.com/Chingchuan-chen/RCBLAS/issues
+Description:
+  'CBLAS' provides the C interface to 'BLAS'. Since 'CBLAS' does not be included in R.
+  Therefore, we introduce 'RCBLAS' to R through 'Rcpp'.
+  The 'RCBLAS' package can be used in linking other package required 'CBLAS' in 'Rcpp'.
+  The C interface to 'BLAS' routines included by R are compiled and single precision
+  routine is excluded out. The supported routines of 'BLAS' can be found at
+  'https://github.com/Chingchuan-chen/RCBLAS/tree/master/src'.
+  The files 'src/*.c' and 'src/*.f' are come from 'LAPACK-3.7.1'.
+SystemRequirements: BLAS libraries
+Depends:
+    R (>= 3.3.0)
+Imports:
+    Rcpp (>= 0.11.0)
+LinkingTo:
+    Rcpp
+Suggests:
+    RcppEigen,
+    RcppBlaze
+LazyData: yes
+License: GPL (>= 2)
+RoxygenNote: 6.0.1

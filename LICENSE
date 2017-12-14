@@ -1,0 +1,9 @@
+Please see the included file COPYRIGHTS in the inst folder
+details on licenses as well as copyrights.
+
+In short:
+
+ - CBLAS (as an upstream project) in licensed under the BSD-3 (a
+   version of which is included in the file COPYRIGHTS), and
+
+ - the RCBLAS integration into R is licensed as GPL-2 or later.
